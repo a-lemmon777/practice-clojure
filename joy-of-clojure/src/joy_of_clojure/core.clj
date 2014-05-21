@@ -1,6 +1,6 @@
 (ns joy-of-clojure.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+;; Given ["Aaron" "David" "Lemmon"] returns "Lemmon, Aaron David".
+(defn rearrange [whole-name]
+  (let [[f-name m-name l-name] whole-name]
+    (str l-name ", " f-name " " m-name)))
